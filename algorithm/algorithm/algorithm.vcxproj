@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Heapsort.cpp" />
+    <ClCompile Include="MERGESORT.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C3D237BA-FD5D-45DD-90A6-A98E04F00F69}</ProjectGuid>

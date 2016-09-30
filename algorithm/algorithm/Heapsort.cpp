@@ -2,7 +2,7 @@
 
 void range_heap(int* arr, int index, int max_heap);
 void heap_swap(int* arr, int parent, int child);
-void extract_max(int* arr, int the_number, int max_heap);
+void extract_max(int* arr, int the_number);
 int main(void) {
 	int The_number;
 	int The_number_const;
@@ -21,7 +21,7 @@ int main(void) {
 	}
 	for (para1 = 1; para1 <= repeat_maximum; para1++) {
 		if (para1 <= The_number_const) {
-			extract_max(matrix, The_number, maximum_heap_index);
+			extract_max(matrix, The_number);
 			The_number = The_number - 1;
 			maximum_heap_index = The_number / 2;
 		}
@@ -76,14 +76,13 @@ void heap_swap(int* arr, int parent, int child) {
 	arr[child] = temp;
 }
 //최대값 추출 함수 
-void extract_max(int* arr, int the_number, int max_heap) {
+void extract_max(int* arr, int the_number) {
 	int para;
 	printf("%d ", arr[1]);
 	heap_swap(arr, 1, the_number);
 	arr[the_number] = 0;
 	the_number = the_number - 1;
-	max_heap = the_number / 2;
-	for (para = max_heap; para >= 1; para--) {
+	for (para = the_number /2; para >= 1; para--) {
 		range_heap(arr, para, the_number);
 	}
 

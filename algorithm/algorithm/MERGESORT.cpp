@@ -5,21 +5,18 @@ void merge(int arr[], int left, int mid, int right);
 
 int main(void) {
 	int matrix[100000];/*행렬잡기*/
-	int num;/* 변수개수*/
+	int matrixa[100000];
+	int matrixb[100000];
+	int num1;
+	int num2;/* 변수개수*/
 	int a; /*매개변수*/
-	scanf("%d", &num);/*넣을 변수 개수 초기화*/
-	for (a = 0; a < num; a++) {
-		scanf("%d", &matrix[a]);/*행렬 초기화 */
-		
+	scanf("%d %d", &num1, &num2);/*넣을 변수 개수 초기화*/
+	for (a = 0; a < num1; a++) {
+		scanf("%d", &matrix[a]);/*행렬 초기화 */	
 	}
-	/*for (a = 0; a < num; a++) {
-		printf("%d", matrix[a]); /*출력 확인값*/
-
-	/*}*/
-
-	mergesort(matrix, 0, num - 1);
+	mergesort(matrix, 0, num1 - 1);
 	/*printf("\n");*/
-	for (a = 0; a < num; a++) {
+	for (a = 0; a < num1; a++) {
 		printf("%d\n", matrix[a]); /*출력 확인값*/
 
 	}
