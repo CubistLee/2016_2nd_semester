@@ -68,8 +68,7 @@ void range_heap(int* arr, int index, int thenum) {/*힙정렬*/
 		return;
 	}
 }
-
-//부모자식노드 교환 함수 
+//하향성 힙 재정렬 함수 
 void heap_swap(int* arr, int parent, int child) {
 	int temp = arr[parent];
 	arr[parent] = arr[child];
@@ -82,8 +81,8 @@ void extract_max(int* arr, int the_number) {
 	heap_swap(arr, 1, the_number);
 	arr[the_number] = 0;
 	the_number = the_number - 1;
-	for (para = the_number /2; para >= 1; para--) {
-		range_heap(arr, para, the_number);
+	/*for (para = the_number /2; para >= 1; para--) */{
+		range_heap(arr, 1, the_number);
 	}
 
 }
