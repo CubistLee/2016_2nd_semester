@@ -11,7 +11,7 @@ int main(void) {
 	for (a = 0; a < num; a++) {
 		scanf("%d", &matrix[a]);/*행렬 초기화 */
 		
-	}
+	}`
 	/*for (a = 0; a < num; a++) {
 		printf("%d", matrix[a]); /*출력 확인값*/
 
