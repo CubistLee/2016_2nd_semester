@@ -18,5 +18,11 @@
     <ClCompile Include="assemblyline.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="matrix chain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="common_sequence.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
